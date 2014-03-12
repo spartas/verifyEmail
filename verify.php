@@ -9,7 +9,7 @@ function verifyEmail($toemail, $fromemail, $getdetails = false){
 	$domain = rtrim($domain, "]");
 
 	if( "IPv6:" == substr($domain, 0, strlen("IPv6:")) ) {
-		$domain = substr($domain, strlen("IPv6") + 1);
+		$domain = substr($domain, strlen("IPv6:") );
 	}
 
 	$mxhosts = array();
